@@ -16,17 +16,17 @@
         
         <Label 
             FontSize="18" FontAttributes="Bold"
-            Text="{Binding titulonombre}"
+            Text="{Binding titulonumero}"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
 
-        <Editor x:Name="TextEditorNumero"
+        <Editor x:Name="TextEditor"
             Placeholder="Ingresa tu numero"
             Text="{Binding TextNumero}"
             HeightRequest="100" />
         <Label 
             FontSize="18" FontAttributes="Bold"
-            Text="{Binding titulonumero}"
+            Text="{Binding titulonombre}"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
 
