@@ -9,8 +9,34 @@
     </ContentPage.BindingContext>
     <VerticalStackLayout Spacing="10" Margin="10">
         <Label 
-            Text="Welcome to .NET MAUI!"
+            FontSize="22" FontAttributes="Bold"
+            Text="{Binding Nombre1}"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
+
+        <Label 
+            FontSize="22" FontAttributes="Bold"
+            Text="{Binding Nombre2}"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Label 
+            FontSize="22" FontAttributes="Bold"
+            Text="{Binding Apellido1}"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        
+        <Label 
+            FontSize="22" FontAttributes="Bold"
+            Text="{Binding Apellido2}"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+       
     </VerticalStackLayout>
+
+         <Label 
+            FontSize="22" FontAttributes="Bold"
+            Text="{Binding nombre}"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
 </ContentPage>
