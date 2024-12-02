@@ -8,35 +8,62 @@
         <models:Page2 />
     </ContentPage.BindingContext>
     <VerticalStackLayout Spacing="10" Margin="10">
-        <Label 
-            FontSize="22" FontAttributes="Bold"
-            Text="{Binding Nombre1}"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
 
-        <Label 
-            FontSize="22" FontAttributes="Bold"
-            Text="{Binding Nombre2}"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-
-        <Label 
-            FontSize="22" FontAttributes="Bold"
-            Text="{Binding Apellido1}"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-        
-        <Label 
-            FontSize="22" FontAttributes="Bold"
-            Text="{Binding Apellido2}"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-       
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="2*" />
+                <RowDefinition />
+                <RowDefinition Height="100" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <BoxView Color="Green" />
+            <Label 
+                FontSize="22" FontAttributes="Bold"
+                Text="{Binding Nombre1}"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+            <BoxView Grid.Column="1"
+                 Color="Blue" />
+            <Label
+                Grid.Column="1"
+                FontSize="22" FontAttributes="Bold"
+                Text="{Binding Nombre2}"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+            <BoxView Grid.Row="1"
+                 Color="Teal" />
+            <Label
+                Grid.Row="1"
+                FontSize="22" FontAttributes="Bold"
+                Text="{Binding Apellido1}"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+            <BoxView Grid.Row="1"
+                 Grid.Column="1"
+                 Color="Purple" />
+            <Label
+                Grid.Row="1"
+                Grid.Column="1"
+                FontSize="22" FontAttributes="Bold"
+                Text="{Binding Apellido2}"
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+            <BoxView Grid.Row="2"
+                 Grid.ColumnSpan="2"
+                 Color="Red" />
+            <Label 
+               Grid.Row="2"
+               Grid.ColumnSpan="2"
+               FontSize="22" FontAttributes="Bold"
+               Text="{Binding github}"
+               VerticalOptions="Center" 
+               HorizontalOptions="Center" />
+        </Grid>
+    
     </VerticalStackLayout>
 
-         <Label 
-            FontSize="22" FontAttributes="Bold"
-            Text="{Binding nombre}"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+         
 </ContentPage>
