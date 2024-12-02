@@ -9,21 +9,43 @@
     </ContentPage.BindingContext>
     <VerticalStackLayout Spacing="10" Margin="10">
         <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-        <Label 
             FontSize="22" FontAttributes="Bold"
-            Text="{Binding nombre}"
+            Text="Examen de Progreso 2 Desarrollado por Brandon Arellano"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
+        
         <Label 
-            FontSize="22" FontAttributes="Bold"
-            Text="{Binding numero}"
+            FontSize="18" FontAttributes="Bold"
+            Text="{Binding titulonombre}"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
-        
-        
-        
+
+        <Editor x:Name="TextEditorNumero"
+            Placeholder="Ingresa tu numero"
+            Text="{Binding TextNumero}"
+            HeightRequest="100" />
+        <Label 
+            FontSize="18" FontAttributes="Bold"
+            Text="{Binding titulonumero}"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Editor x:Name="TextEditorNombre"
+            Placeholder="Ingresa tu nombre"
+            Text="{Binding TextNombre}"
+            HeightRequest="100" />
+
+        <Label 
+            FontSize="18" FontAttributes="Bold"
+            Text="{Binding titulonota}"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <Button Text="Guardar"
+                Clicked="Guardar_Clicked" />
+
+
+
+
     </VerticalStackLayout>
 </ContentPage>

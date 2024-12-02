@@ -8,11 +8,14 @@ namespace ArellanoBrandonExamSegundo.Models
 {
     internal class Page1
     {
-        public string nombre => "Ingrese su nombre";
+        public string titulonombre => "Ingrese su nombre";
 
-        public string numero => "Ingrese su numero";
+        public string titulonumero => "Ingrese su numero";
 
-        public string nota => "La ultima recarga fue: ";
+        public string titulonota => "La ultima recarga fue: ";
+        public string file { get; set; }
+        public string TextNumero { get; set; }
+        public string TextNombre { get; set; }
 
     }
 }
