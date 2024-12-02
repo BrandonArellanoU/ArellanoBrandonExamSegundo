@@ -8,7 +8,7 @@ namespace ArellanoBrandonExamSegundo.Models
 {
     internal class Page1
     {
-        public string Nombre => "Ingrese su nombre";
+        public string nombre => "Ingrese su nombre";
 
         public string numero => "Ingrese su numero";
 

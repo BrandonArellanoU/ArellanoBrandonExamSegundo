@@ -1,12 +1,29 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:models="clr-namespace:ArellanoBrandonExamSegundo.Models"
              x:Class="ArellanoBrandonExamSegundo.Views.Page1"
              Title="Page1">
-    <VerticalStackLayout>
+    <ContentPage.BindingContext>
+        <models:Page1 />
+    </ContentPage.BindingContext>
+    <VerticalStackLayout Spacing="10" Margin="10">
         <Label 
             Text="Welcome to .NET MAUI!"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
+        <Label 
+            FontSize="22" FontAttributes="Bold"
+            Text="{Binding nombre}"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Label 
+            FontSize="22" FontAttributes="Bold"
+            Text="{Binding numero}"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        
+        
+        
     </VerticalStackLayout>
 </ContentPage>
